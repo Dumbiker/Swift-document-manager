@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document Manager</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Document Manager</h1>
+
+    <div class="controls">
+      <button id="createDoc">New Text Doc</button>
+      <button id="createSheet">New Spreadsheet</button>
+      <label class="file-input">
+        <input type="file" id="importFile" accept=".sdf,.txt,.csv" />
+        <span>Import .sdf / .txt / .csv</span>
+      </label>
+    </div>
+
+    <div class="meta">
+      <input id="filename" type="text" placeholder="filename (e.g., notes.txt or data.csv)" />
+    </div>
+
+    <textarea id="editor" placeholder="Type here..."></textarea>
+
+    <div class="controls">
+      <button id="saveTxt">Save as .txt</button>
+      <button id="saveCsv">Save as .csv</button>
+      <button id="downloadSdf">Save as .sdf</button>
+    </div>
+
+    <p class="hint">
+      Tip: For CSV, separate columns with commas and rows with new lines.
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
