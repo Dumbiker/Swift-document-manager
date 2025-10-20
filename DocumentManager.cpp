@@ -20,4 +20,5 @@ void importDocument(const std::string& filename) {
     }
     std::string content((std::istreambuf_iterator<char>(file)), std::istreambuf_iterator<char>());
     std::cout << "Document content: " << content << std::endl;
+    file.close();
 }
